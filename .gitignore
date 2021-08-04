@@ -1,6 +1,11 @@
 #secrets
 serverless.json
+
+# HubSpot configs
 hubspot.config.yml
+
+# Lock files
+package-lock.json
 
 # Logs
 logs
