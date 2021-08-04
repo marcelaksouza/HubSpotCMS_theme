@@ -1,3 +1,7 @@
+#secrets
+serverless.json
+hubspot.config.yml
+
 # Logs
 logs
 *.log

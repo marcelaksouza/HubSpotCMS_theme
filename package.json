@@ -1,0 +1,24 @@
+{
+  "name": "cats-theme",
+  "version": "1.0.0",
+  "description": "Code Exercise HubSpotCMS",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelaksouza/HubSpotCMS_theme.git"
+  },
+  "author": "Marcela Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelaksouza/HubSpotCMS_theme/issues"
+  },
+  "homepage": "https://github.com/marcelaksouza/HubSpotCMS_theme#readme",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
