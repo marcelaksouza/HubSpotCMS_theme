@@ -6,18 +6,15 @@
   {# Main header #}
 
   <div class="header__container content-wrapper">
+    <h1>Cats are wonderful </h1>
 
-    <div class="header__column">
-      <h1>Cats are wonderful</h1>
-        
-      <div class="header__description header--element">
-        {% module "logo_text" 
-        path="@hubspot/text", 
-        label="Header Description" %}
-      </div>
-      <p>T.S. Elliot</p>
+    <div class="header__description header--element">
+      {% module "logo_text" path="@hubspot/text", label="Header Description" %}
     </div>
+    <p style="font-style: italic">T.S. Elliot</p>
 
+    <div class="menu">
+      {% module "module_menu" path="@hubspot/menu", label="Menu Module" %}
+    </div>
   </div>
-
 </header>

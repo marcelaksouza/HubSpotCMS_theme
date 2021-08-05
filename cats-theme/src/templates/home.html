@@ -4,18 +4,7 @@
   label: Home
   screenshotPath: ../images/template-previews/home.png
 -->
-{% extends "./partials/base.html" %}
-
-{% block body %}
+{% extends "./partials/base.html" %} {% block body %}
 <main id="main-content" class="body-container-wrapper"></main>
-  
-  {% module_block module "description_area" path="@hubspot/text",
-  label="Description banner area" %}
-    {% module_attribute "description_area_attribute" %}
-       
-       <p>Something about cats</p>
-    {% end_module_attribute %}
-{% end_module_block %}
 
-</main>
 {% endblock body %}
