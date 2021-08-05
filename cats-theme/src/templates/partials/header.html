@@ -1,0 +1,23 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<header class="header">
+  {# Main header #}
+
+  <div class="header__container content-wrapper">
+
+    <div class="header__column">
+      <h1>Cats are wonderful</h1>
+        
+      <div class="header__description header--element">
+        {% module "logo_text" 
+        path="@hubspot/text", 
+        label="Header Description" %}
+      </div>
+      <p>T.S. Elliot</p>
+    </div>
+
+  </div>
+
+</header>
