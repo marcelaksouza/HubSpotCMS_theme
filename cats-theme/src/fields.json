@@ -1,0 +1,10 @@
+[
+    {
+        "label":"Text Color",
+        "name": "text_color",
+        "type": "color",
+        "default":{
+            "color": "rgba(232, 236, 241, 1)"
+        }
+    }
+]

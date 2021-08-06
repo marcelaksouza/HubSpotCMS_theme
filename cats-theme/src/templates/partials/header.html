@@ -5,16 +5,21 @@
 <header class="header">
   {# Main header #}
 
-  <div class="header__container content-wrapper">
-    <h1>Cats are wonderful </h1>
-
-    <div class="header__description header--element">
-      {% module "logo_text" path="@hubspot/text", label="Header Description" %}
-    </div>
-    <p style="font-style: italic">T.S. Elliot</p>
-
-    <div class="menu">
-      {% module "module_menu" path="@hubspot/menu", label="Menu Module" %}
-    </div>
+  <div class="">
+    <h1>
+      {% module "page_title" path="@hubspot/text", label="Header Description", value="Cats are wonderful" %}
+    </h1>
+    <p>
+      {% module "page_title" path="@hubspot/text", label="Header Description", 
+      value="The naming of cats is a difficult matter. it isn't just one of tour holidays games. You may think at first I'm mad as a hatter. when I tell you a cat must have three different names..." %}
+    </p>
+    <p style="font-style: italic">
+      {% module "page_title" path="@hubspot/text", label="Header Description", value="T.S. Elliot" %}
+    </p>
   </div>
+
+  <div class="menu">
+    {% module "module_menu" path="@hubspot/menu", label="Menu Module" %}
+  </div>
+
 </header>
