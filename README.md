@@ -2,4 +2,4 @@
 
 Code Exercise HubSpotCMS
 
-Live page URL: https://app-eu1.hubspot.com/content-detail/24930578/landing-page/43139535312/performance
+Live page URL: https://1e3dde94-b351-4f8b-ba7a-ebe8a043fe0a.hubspotpagebuilder.eu/home-page
