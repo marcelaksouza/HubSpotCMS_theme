@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+}
+
+.col{
+ padding: 1em
+}
+
+.team__wrap{
+  text-align: center;
+  background: #eee;
+  padding: 4vh;
+  margin: 1vh
+}
+  
+.ourTeam__name {
+  font-weight: bold;
+}
+.round__img{
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.round__img img {
+  width: auto;
+  height: 100%;
+
+}

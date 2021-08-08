@@ -1,0 +1,73 @@
+[ {
+  "id" : "03128df0-11dd-345e-42ca-39d35d452409",
+  "name" : "team_member",
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "b5ab484d-0069-1bac-cbe2-dca4d62f55bf",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "b5ab484d-0069-1bac-cbe2-dca4d62f55bf",
+    "name" : "team_name",
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sally"
+  }, {
+    "id" : "3e172c59-2781-4a20-b0e1-974e861d1d7f",
+    "name" : "photo",
+    "label" : "Profile Picture",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent-eu1.net/hubfs/24930578/profile-pic-sally.svg",
+      "alt" : "Custom profile picure",
+      "loading" : "lazy",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    }
+  }, {
+    "id" : "236f806f-5257-8c98-85be-0110e4d2f39d",
+    "name" : "role",
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "CTO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "team_name" : "Sally",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent-eu1.net/hubfs/24930578/profile-pic-sally.svg",
+      "alt" : "Custom profile picure",
+      "loading" : "lazy",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    },
+    "role" : "CTO"
+  }
+} ]

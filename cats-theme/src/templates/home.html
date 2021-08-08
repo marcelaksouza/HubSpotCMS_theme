@@ -1,7 +1,7 @@
 <!--
   templateType: page
-  isAvailableForNewContent: true
   label: Home
+  isAvailableForNewContent: true
   screenshotPath: ../images/template-previews/home.png
 -->
 {% extends "./partials/base.html" %}
@@ -9,6 +9,43 @@
 {% block body %}
 <main id="main-content" class="body-container-wrapper">
   
-  
+  {% dnd_area 'dnd_area'
+    label='Main section',
+    class='body-container body-container--about'
+    %}
+  {% dnd_section 
+    vertical_alignment='TOP' 
+  %}
+    {% dnd_module path='@hubspot/linked_image', 
+      width=6, 
+      img={
+        "src": get_asset_url('../images/kittie_flowers.jpg'),
+        "alt": "Kittie with flowers"
+      }
+    %}
+    {% end_dnd_module %}
+    {% dnd_column width=6, offset=6 %}
+      {% dnd_row 
+        padding={
+            'bottom': 15
+        } 
+      %}
+        {% dnd_module path='@hubspot/rich_text' %}
+          {% module_attribute "html"%}
+              <h1>Find out what this cat is looking at</h1>
+              <p>We honestly dont currently understand what this cat is looking at. 
+                It could be a small insect. It could be an errant carper fiber. 
+                Perhaps the cat is looking at nothing and pondering deep existential 
+                questions that have haunted us all at one time or another 
+                we may never know. but we will never stop trying to find the answer</p>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
+
+  {% module "module_ourTeam" path="/cats-theme/modules/our_team", label="Our Team Module" %}
+
 </main>
-{% endblock body %}
+{% endblock body %}  

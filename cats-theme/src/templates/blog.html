@@ -1,0 +1,29 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: blog
+  screenshotPath: ../images/template-previews/about.png
+-->
+{% extends './partials/base.html' %}
+
+{% block body %}
+<main id="main-content" class="body-container-wrapper"> 
+
+<div id="allMembers"></div>
+
+{% for member in allMembers %}
+  {% if loop.length is divisibleby 4 %}
+  <div style="width:25%">
+    <p> {{member.name}} </p>;
+    <img src="{{member.photo}}" alt="Member photo">;
+    <p> {{member.role}}</p>;
+  </div>
+  {% elif loop.length is divisibleby 3 %}
+  <div style="width:33.33332%">Post content</div>
+{% else %}
+  <div style="width:50%">Post content</div>
+  {% endif %}
+{% endfor %}
+
+</main>
+{% endblock body %}

@@ -1,14 +1,16 @@
+{% include './_containers-dnd.css' %}
+{% include './_layout.css' %}
+
 /* Theme base styles */
 
 html,
 body{
   margin: 0;
   padding: 0;
-  background-color: rgba(232, 236, 241, 1);
+  background-color: #e8ecf1;
 }
 
 .page_wrap{
-  color: {{theme.text_color.color}};
   max-width: 1100px;
   margin: 0;
   background-color: #ddd;
@@ -18,9 +20,10 @@ body{
 
 header{
   letter-spacing: .3em;
-  color: {{theme.text_color.color}};
+  color: {{theme.header.text_color_selector.color}};
   padding: 1em 50% 1em 2em;
   height: 100%;
+  background-color: {{theme.header.bg_color_selector.color}};
 }
 
 a {
@@ -30,33 +33,24 @@ a {
 .menu {
   background-color: #333333;
   display: flex;
-  /* let's align the items so everything is nice and centered */
   align-items: center;
 }
 
-/* We want all links in the navbar to be #e7e7e7 */
 .menu a {
   color: #e7e7e7;
 }
 
 .menu ul {
- /* Let's reset the margin and padding of the list so it's is flush. */
   margin: 0;
   padding: 0;
-  /* Let's remove the bullet points */
   list-style-type: none;
-  /* display the list flex and align the items centered */
   display: flex;
   align-items:center;
 }
 
 .menu .brand {
-  /*Let's make the anchor display block.
-     This will ensure when we get the full width of the container.
-  */
   display: block;
   color: #e7e7e7;
- /* Remove padding from top/bottom and add 24px padding right/left */
   padding: 0 24px;
   font-size: 24px;
 }
@@ -64,15 +58,28 @@ a {
 .menu ul li a {
   color: #e7e7e7;
   padding: 24px;
-  /*Let's make the anchor display block.
-     This will ensure when we hover, focus, or is active we get the full width and height 
-      of the container.
-  */
   display: block;
 }
 
-/* When a use hovers or focuses a link change the background */
 .menu ul a:hover,
 .menu ul a:focus {
   background-color: #272727;
 }
+
+.body-container img{
+  padding-top:30px;
+  Height: 
+}
+
+.body-container{
+  overflow: hidden;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.dnd_area-column-2-row-0-padding{
+  padding-left: 10px;
+  padding-right: 10px
+}
+

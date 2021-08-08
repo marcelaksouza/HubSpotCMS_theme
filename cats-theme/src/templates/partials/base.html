@@ -11,6 +11,7 @@
     {% endif %}
     <meta name="description" content="" />
     {{ require_css(get_asset_url("../../css/main.css")) }} 
+    {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
     {{ standard_header_includes }}
   </head>
   
@@ -27,6 +28,7 @@
       {% global_partial path='./footer.html' %} 
       {% endblock footer %}
     </div>
+    {{ require_js(get_asset_url('../../js/main.js')) }}
     {{ standard_footer_includes }}
   </body>
 

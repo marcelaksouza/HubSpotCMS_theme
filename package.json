@@ -8,7 +8,7 @@
     "prettier": "2.3.2"
   },
   "scripts": {
-    "format": "prettier --write \"**/*\" ",
+    "format": "prettier --write 'src/**/*.js' 'src/**/*.json'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

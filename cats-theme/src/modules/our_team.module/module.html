@@ -1,0 +1,14 @@
+<div class="row container">
+  
+  {% for item in module.team_member %}
+  <div class="col team__wrap">
+    {% inline_text field="team_name" value="{{ item.team_name }}" %}
+    <div class="round__img">
+    <img src="{{ item.photo.src }}" alt="{{ item.photo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    </div>
+	  {% inline_text field="role" value="{{ item.role }}" %}
+  </div>
+  {% endfor %}
+  
+</div>
+  

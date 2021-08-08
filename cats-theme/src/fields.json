@@ -1,10 +1,50 @@
 [
-    {
+  {
+    "label": "Website header",
+    "name": "header",
+    "type": "group",
+    "children": [
+      {
         "label":"Text Color",
-        "name": "text_color",
+        "name": "text_color_selector",
         "type": "color",
         "default":{
-            "color": "rgba(232, 236, 241, 1)"
+            "color": "#000000"
         }
+      },
+      {
+        "label":"Bg Color",
+        "name": "bg_color_selector",
+        "type": "color",
+        "default":{
+            "color": "#e8ecf1"
+        }
+      }
+    ]
+  },
+  {
+      "label": "Spacing",
+      "name": "spacing",
+      "type": "group",
+      "children": [
+        {
+          "label": "Vertical spacing",
+          "name": "vertical_spacing",
+          "type": "number",
+          "display": "slider",
+          "max": 500,
+          "min": 0,
+          "default": 80
+        },
+        {
+          "label": "Maximum content width",
+          "name": "max_width",
+          "type": "number",
+          "display": "slider",
+          "max": 2500,
+          "min": 900,
+          "default": 1240
+        }
+      ]
     }
 ]
