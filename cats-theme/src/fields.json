@@ -21,6 +21,36 @@
         }
       }
     ]
+  },{
+    "label": "Menu",
+      "name": "menu",
+      "type": "group",
+      "children": [
+        {
+          "label":"Text Color",
+          "name": "text_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#e7e7e7"
+          }
+        },
+        {
+          "label":"Bg Color",
+          "name": "bg_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#333333"
+          }
+        },
+        {
+          "label":"Hover bg Color",
+          "name": "hover_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#272727"
+          }
+        }
+      ]
   },
   {
       "label": "Spacing",
@@ -44,6 +74,29 @@
           "max": 2500,
           "min": 900,
           "default": 1240
+        }
+      ]
+    },
+    {
+      "label": "Footer",
+      "name": "footer",
+      "type": "group",
+      "children": [
+        {
+          "label":"Text Color",
+          "name": "text_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#000000"
+          }
+        },
+        {
+          "label":"Bg Color",
+          "name": "bg_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#e8ecf1"
+          }
         }
       ]
     }
