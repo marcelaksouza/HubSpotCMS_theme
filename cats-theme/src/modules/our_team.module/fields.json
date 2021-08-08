@@ -1,4 +1,28 @@
-[ {
+[ 
+  {
+    "label": "Our team",
+      "name": "team",
+      "type": "group",
+      "children": [
+        {
+          "label":"Text Color",
+          "name": "text_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#e7e7e7"
+          }
+        },
+        {
+          "label":"Bg Color",
+          "name": "bg_color_selector",
+          "type": "color",
+          "default":{
+              "color": "#333333"
+          }
+        }
+      ]
+  },
+  {
   "id" : "03128df0-11dd-345e-42ca-39d35d452409",
   "name" : "team_member",
   "label" : "Team Member",

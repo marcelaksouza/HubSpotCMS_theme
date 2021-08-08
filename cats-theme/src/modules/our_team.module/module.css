@@ -1,5 +1,6 @@
 .row {
   display: flex;
+  justify-content: space-between;
 }
 
 .col{
@@ -8,7 +9,7 @@
 
 .team__wrap{
   text-align: center;
-  background: #eee;
+  background: {{theme.team.bg_color_selector.color}};;
   padding: 4vh;
   margin: 1vh
 }
@@ -16,6 +17,7 @@
 .ourTeam__name {
   font-weight: bold;
 }
+
 .round__img{
   display: inline-block;
   position: relative;
@@ -28,5 +30,4 @@
 .round__img img {
   width: auto;
   height: 100%;
-
 }
